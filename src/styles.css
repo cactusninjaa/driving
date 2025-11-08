@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@theme {
+  --color-orange-500: oklch(0.643 0.187356 43.9118);
+  --color-orange-200: oklch(0.8469 0.0969 54.3);
+  --color-red-500: oklch(0.6532 0.2328 25.74);
+  --color-yellow-500: oklch(0.8652 0.1768 90.38);
+  --color-green-500: oklch(0.7303 0.1944 147.44);
+  --color-grey-900: oklch(0.2143 0.0039 286.07);
+  --color-grey-700: oklch(0.503 0.0117 267.27);
+  --color-grey-500: oklch(0.7603 0.0074 268.53);
+  --color-grey-200: oklch(0.9524 0.0013 286.37);
+
+  --spacing-1x: 4px;
+  --spacing-2x: 8px;
+  --spacing-3x: 12px;
+  --spacing-4x: 24px;
+  --spacing-5x: 32px;
+  --spacing-6x: 64px;
+}
+
 body {
   @apply m-0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,9 +26,4 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

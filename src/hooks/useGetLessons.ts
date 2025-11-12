@@ -3,7 +3,7 @@ import { Lesson } from "@/types/lesson";
 export const useGetLessons = (): Lesson[] => (
     [
   {
-    "id": 1,
+    "id": "1",
     "title": "Savoir s’installer au poste de conduite (IPC)",
     "content": [
       "L’installation au poste de conduite représente 50 % de la conduite : une mauvaise installation peut réduire de moitié nos capacités.",
@@ -13,7 +13,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Savoir utiliser les commandes intérieures du véhicule",
     "content": [
       "Découvrir les commandes du côté volant et du tableau de bord.",
@@ -23,7 +23,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Savoir tenir le volant en ligne droite, en courbe, en virage et en tournant",
     "content": [
       "Le volant est une horloge : position 9h15 ou 10h10 en ligne droite.",
@@ -35,7 +35,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 4,
+    "id": "4",
     "title": "Savoir démarrer",
     "content": [
       "Explication obligatoire de la chaîne cinématique avec schéma à l’appui.",
@@ -46,7 +46,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 5,
+    "id": "5",
     "title": "Savoir doser l’embrayage et l’accélérateur",
     "content": [
       "Objectif : comprendre le lien entre l’embrayage et l’accélérateur pour un dosage fluide.",
@@ -55,7 +55,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 6,
+    "id": "6",
     "title": "Savoir manipuler la boîte de vitesses",
     "content": [
       "Utiliser la paume de la main pour manipuler le pommeau de vitesses, sans jamais utiliser le pouce.",
@@ -67,7 +67,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 7,
+    "id": "7",
     "title": "Savoir doser le frein pour ralentir et s’arrêter",
     "content": [
       "Le frein sert uniquement à ralentir ou s’arrêter.",
@@ -78,7 +78,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 8,
+    "id": "8",
     "title": "Savoir rétrograder",
     "content": [
       "Procédure 3 → 2 : lâcher l’accélérateur, freiner légèrement, appuyer à fond sur l’embrayage, passer la vitesse, relever l’embrayage comme au démarrage.",
@@ -87,7 +87,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 9,
+    "id": "9",
     "title": "Savoir avoir une trajectoire droite dans sa voie de circulation",
     "content": [
       "En ligne droite, le regard doit être au milieu du pare-brise.",
@@ -97,7 +97,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 10,
+    "id": "10",
     "title": "Savoir contrôler les rétroviseurs et les angles morts",
     "content": [
       "Les contrôles servent à détecter les dangers potentiels, car nous représentons nous-mêmes un danger.",
@@ -108,7 +108,7 @@ export const useGetLessons = (): Lesson[] => (
     ]
   },
   {
-    "id": 11,
+    "id": "11",
     "title": "Savoir réaliser les manœuvres (créneau, bataille, épi)",
     "content": [
       "Objectif : maîtriser les manœuvres de stationnement en créneau, bataille et épi.",

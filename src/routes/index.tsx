@@ -1,4 +1,4 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, useNavigate } from '@tanstack/react-router'
 import { useGetLessons } from '@/hooks/useGetLessons'
 import { LessonTemplate } from '@/components/04-templates/LessonTemplate'
 import { Lesson } from '@/types/lesson'

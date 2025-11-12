@@ -1,5 +1,5 @@
 export type Lesson = {
-    id: number
-    title: string
-    content: string[]
+    id: string;
+    title: string;
+    content: string[];
 }

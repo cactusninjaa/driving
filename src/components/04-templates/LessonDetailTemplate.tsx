@@ -9,7 +9,7 @@ type LessonDetailTemplateProps = {
 }
 
 export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
-    <div className='max-w-2xl flex flex-col justify-between'>
+    <div className="max-w-2xl flex flex-col gap-12">
         <div className="flex gap-12 flex-col">
             <Title size='xl'>{lesson.title}</Title>
             <div className="flex flex-col gap-2">
@@ -18,7 +18,7 @@ export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
                 ))}
             </div>
         </div>
-        <div className="absolute bottom-20 left-1/2 -translate-x-1/2">
+        <div className="flex justify-center pt-10">
             <Link to='/'>
                 <Button>
                         Accueil 
@@ -26,4 +26,5 @@ export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
             </Link>
         </div>
     </div>
+    
 ) 

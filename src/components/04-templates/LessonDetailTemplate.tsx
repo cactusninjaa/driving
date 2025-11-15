@@ -26,4 +26,4 @@ export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
             </Link>
         </div>
     </div>
-)
+) 

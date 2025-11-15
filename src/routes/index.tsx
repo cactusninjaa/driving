@@ -9,7 +9,7 @@ function App() {
     const lessons: Lesson[] = useGetLessons()
 
     return (
-        <div className='margin-auto p-12'>
+        <div className='margin-auto md:px-12 py-12 px-6'>
             <LessonTemplate 
                 lessons={lessons}
             />

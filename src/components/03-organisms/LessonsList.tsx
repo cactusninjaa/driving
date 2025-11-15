@@ -9,9 +9,9 @@ export const LessonsList = ({lessons}: LessonsListProps) => (
     <div className="flex flex-col gap-4">
         {lessons.map((lesson) => (
             <LessonCard 
-                    key={lesson.id} 
-                    lesson={lesson} 
-                />
+                key={lesson.id} 
+                lesson={lesson} 
+            />
         ))}
     </div>
 )

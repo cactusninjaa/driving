@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --color-*: initial;
+
   --color-orange-500: oklch(0.643 0.187356 43.9118);
   --color-orange-200: oklch(0.8469 0.0969 54.3);
   --color-red-500: oklch(0.6532 0.2328 25.74);
@@ -10,6 +12,7 @@
   --color-grey-700: oklch(0.503 0.0117 267.27);
   --color-grey-500: oklch(0.7603 0.0074 268.53);
   --color-grey-200: oklch(0.9524 0.0013 286.37);
+  --color-white: oklch(1 0.0013 286.37);
 
   --spacing-1x: 4px;
   --spacing-2x: 8px;
@@ -17,6 +20,8 @@
   --spacing-4x: 24px;
   --spacing-5x: 32px;
   --spacing-6x: 64px;
+
+  --shadow-card: 0 4px 20px 0 rgba(0, 0, 0, 0.10);
 }
 
 body {
@@ -26,4 +31,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-grey-900)
 }

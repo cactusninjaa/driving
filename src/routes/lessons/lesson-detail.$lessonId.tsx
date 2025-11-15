@@ -13,6 +13,8 @@ function LessonDetail () {
     const lesson = lessons.filter((lesson) => (lesson.id === lessonId))
 
     return (
-        <LessonDetailTemplate lesson={lesson[0]} />
+        <div className='margin-auto md:px-12 py-12 px-6 flex justify-center'>
+            <LessonDetailTemplate lesson={lesson[0]} />
+        </div>
     )
 }

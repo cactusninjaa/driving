@@ -13,8 +13,8 @@ export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
         <div className="flex gap-12 flex-col">
             <Title size='xl'>{lesson.title}</Title>
             <div className="flex flex-col gap-2">
-                {lesson.content.map((item, index) =>(
-                    <Text key={index}>{item}</Text>
+                {lesson.content.map((item) =>(
+                    <Text key={item}>{item}</Text>
                 ))}
             </div>
         </div>

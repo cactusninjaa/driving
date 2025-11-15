@@ -1,4 +1,5 @@
 import { Lesson } from "@/types/lesson"
+import { Title } from "../01-atoms/Title"
 
 type LessonDetailTemplateProps = {
     lesson: Lesson
@@ -6,7 +7,7 @@ type LessonDetailTemplateProps = {
 
 export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
     <div>
-        <h1>{lesson.title}</h1>
+        <Title size='xl'>{lesson.title}</Title>
         {lesson.content.map((item, index) =>(
             <p key={index}>{item}</p>
         ))}

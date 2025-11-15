@@ -9,7 +9,7 @@ function App() {
     const lessons: Lesson[] = useGetLessons()
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+        <div className='margin-auto p-12'>
             <LessonTemplate 
                 lessons={lessons}
             />

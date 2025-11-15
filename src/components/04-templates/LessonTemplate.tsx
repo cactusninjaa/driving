@@ -1,6 +1,6 @@
 import { Lesson } from "@/types/lesson"
-import { LessonCard } from "../02-molecules/LessonCard"
-import { Link } from "@tanstack/react-router";
+import { LessonsList } from "../03-organisms/LessonsList";
+import { Title } from "../01-atoms/Title";
 
 type LessonTemplateProps = {
     lessons: Lesson[];
@@ -8,20 +8,9 @@ type LessonTemplateProps = {
 
 export const LessonTemplate = ({ lessons }: LessonTemplateProps) => {
     return (
-        <div className="lesson-template">
-            {lessons.map((lesson) => (
-                    <Link 
-                        key={lesson.id} 
-                        to='/lessons/LessonDetail/$lessonId' 
-                        params={{
-                            lessonId: lesson.id,
-                        }}
-                    >
-                        <LessonCard 
-                            lesson={lesson} 
-                        />
-                    </Link >                
-            ))}
+        <div className="div flex flex-col gap-8">
+            <Title size='xl'>Leçons</Title>
+            <LessonsList lessons={lessons}/>
         </div>
     )
 }

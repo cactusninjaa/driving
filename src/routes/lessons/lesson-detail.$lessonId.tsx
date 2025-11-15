@@ -2,7 +2,7 @@ import { LessonDetailTemplate } from "@/components/04-templates/LessonDetailTemp
 import { useGetLessons } from "@/hooks/useGetLessons"
 import { createFileRoute } from "@tanstack/react-router"
 
-export const Route = createFileRoute('/lessons/LessonDetail/$lessonId')({
+export const Route = createFileRoute('/lessons/lesson-detail/$lessonId')({
     ssr: false,
     component: LessonDetail,
 })

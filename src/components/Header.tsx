@@ -14,25 +14,25 @@ import {
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const [groupedExpanded, setGroupedExpanded] = useState<
-    Record<string, boolean>
-  >({})
+  // const [groupedExpanded, setGroupedExpanded] = useState<
+  //   Record<string, boolean>
+  // >({})
 
   return (
     <>
-      <header className="p-4 flex items-center bg-gray-800 text-white shadow-lg">
-        <button
+      <header className="md:px-12 py-6 px-6 flex items-center bg-gray-800 text-white shadow-md">
+        {/* <button
           onClick={() => setIsOpen(true)}
           className="p-2 hover:bg-gray-700 rounded-lg transition-colors"
           aria-label="Open menu"
         >
           <Menu size={24} />
-        </button>
-        <h1 className="ml-4 text-xl font-semibold">
+        </button> */}
+        <h1 className="text-xl font-semibold">
           <Link to="/">
             <img
-              src="/tanstack-word-logo-white.svg"
-              alt="TanStack Logo"
+              src="/logo.svg"
+              alt="Dynastie Drive School Logo"
               className="h-10"
             />
           </Link>
@@ -71,7 +71,7 @@ export default function Header() {
 
           {/* Demo Links Start */}
 
-          <Link
+          {/* <Link
             to="/demo/start/server-funcs"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-800 transition-colors mb-2"
@@ -95,9 +95,9 @@ export default function Header() {
           >
             <Network size={20} />
             <span className="font-medium">Start - API Request</span>
-          </Link>
+          </Link> */}
 
-          <div className="flex flex-row justify-between">
+          {/* <div className="flex flex-row justify-between">
             <Link
               to="/demo/start/ssr"
               onClick={() => setIsOpen(false)}
@@ -167,7 +167,7 @@ export default function Header() {
                 <span className="font-medium">Data Only</span>
               </Link>
             </div>
-          )}
+          )} */}
 
           {/* Demo Links End */}
         </nav>

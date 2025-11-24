@@ -8,23 +8,20 @@ type LessonDetailTemplateProps = {
     lesson: Lesson
 }
 
-export const LessonDetailTemplate = ({lesson}: LessonDetailTemplateProps) => (
+export const LessonDetailTemplate = ({ lesson }: LessonDetailTemplateProps) => (
     <div className="max-w-2xl flex flex-col gap-12">
         <div className="flex gap-12 flex-col">
             <Title size='xl'>{lesson.title}</Title>
             <div className="flex flex-col gap-2">
-                {lesson.content.map((item) =>(
-                    <Text key={item}>{item}</Text>
-                ))}
+                <Text>{lesson.content}</Text>
             </div>
         </div>
         <div className="flex justify-center pt-10">
             <Link to='/'>
                 <Button>
-                        Accueil 
+                    Accueil
                 </Button>
             </Link>
         </div>
     </div>
-    
 ) 

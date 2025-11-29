@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "gen-types": "npx supabase gen types typescript --project-id tvhznynelvirtssyprrj > ./src/supabase/database.types.ts",
     "dev": "vite dev --port 3000",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "build": "vite build",
@@ -37,6 +38,7 @@
     "globals": "^16.5.0",
     "jiti": "^2.6.1",
     "jsdom": "^27.0.0",
+    "supabase": "^2.63.1",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.1.7",
